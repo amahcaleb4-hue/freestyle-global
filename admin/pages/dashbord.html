@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Dashboard | Freestyle Global
+    </title>
+
+
+    <link rel="stylesheet" href="/admin/css/dashbord.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <div class="logo-mark">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-earth-icon lucide-earth">
+                    <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+                    <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+                    <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
+                    <circle cx="12" cy="12" r="10" />
+                </svg>
+            </div>
+
+
+            <div class="logo-text">
+
+                <h2>
+                    FREESTYLE
+                </h2>
+
+                <span>
+                    GLOBAL
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+
+
+            <p class="menu-label">
+                MENU
+            </p>
+
+
+            <a href="/admin" class="nav-item active">
+
+                <i class="fa-solid fa-house">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-house-icon lucide-house">
+                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+                        <path
+                            d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    </svg>
+                </i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a href="/admin/products" class="nav-item">
+
+                <i class="fa-solid fa-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-package2-icon lucide-package-2">
+                        <path d="M12 3v6" />
+                        <path
+                            d="M16.76 3a2 2 0 0 1 1.8 1.1l2.23 4.479a2 2 0 0 1 .21.891V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.472a2 2 0 0 1 .211-.894L5.45 4.1A2 2 0 0 1 7.24 3z" />
+                        <path d="M3.054 9.013h17.893" />
+                    </svg>
+                </i>
+
+                <span>
+                    Products
+                </span>
+
+            </a>
+
+
+            <a href="/admin/add" class="nav-item">
+
+                <i class="fa-solid fa-plus">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-plus-icon lucide-plus">
+                        <path d="M5 12h14" />
+                        <path d="M12 5v14" />
+                    </svg>
+                </i>
+
+                <span>
+                    Add Product
+                </span>
+
+            </a>
+
+
+            <p class="menu-label">
+                SYSTEM
+            </p>
+
+            <a href="/" class="nav-item">
+
+                <i class="fa-solid fa-plus">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-globe-icon lucide-globe">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                        <path d="M2 12h20" />
+                    </svg>
+                </i>
+
+                <span>
+                    View Website
+                </span>
+
+            </a>
+
+
+            <a href="/admin/settings" class="nav-item">
+
+                <i class="fa-solid fa-gear">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-settings-icon lucide-settings">
+                        <path
+                            d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+                        <circle cx="12" cy="12" r="3" />
+                    </svg>
+                </i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+        <!-- LOGOUT -->
+
+        <div class="logout-container">
+
+            <a href="#" class="nav-item logout logoutBtn">
+
+                <i class="fa-solid fa-right-from-bracket">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-log-out-icon lucide-log-out">
+                        <path d="m16 17 5-5-5-5" />
+                        <path d="M21 12H9" />
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                    </svg>
+                </i>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main class="main">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+
+            <button class="menu-button" id="menuButton">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="topbar-title">
+
+                <span>
+                    ADMIN PANEL
+                </span>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+            </div>
+
+
+            <div class="admin-area">
+
+
+                <a href="/admin/messages">
+
+                    <button class="notification">
+
+
+                        <i class="fa-regular ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-bell-icon lucide-bell">
+                                <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                                <path
+                                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+                            </svg>
+                        </i>
+
+
+                        <small class="messageCount">
+
+
+
+                        </small>
+
+
+                    </button>
+
+                </a>
+
+
+                <div class="avatar">
+                    A
+                </div>
+
+
+                <div class="admin-name">
+
+                    <strong>
+                        Admin
+                    </strong>
+
+                    <span>
+                        Store Manager
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+
+            <!-- WELCOME -->
+
+            <div class="welcome">
+
+
+                <div>
+
+                    <span>
+                        WELCOME BACK
+                    </span>
+
+
+                    <h2>
+                        Manage your store
+                        effortlessly.
+                    </h2>
+
+
+                    <p>
+                        Add, edit and manage your
+                        products from one simple
+                        dashboard.
+                    </p>
+
+
+                    <a href="/admin/add" class="primary-button">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        Add Product
+
+                    </a>
+
+                </div>
+
+
+                <div class="welcome-icon">
+
+                    <i class="fa-solid fa-store"></i>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- STAT CARDS -->
+
+            <div class="stats">
+
+
+                <div class="stat">
+
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-box"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            TOTAL PRODUCTS
+                        </span>
+
+
+                        <h2 id="totalProducts">0</h2>
+
+
+                        </h2>
+
+
+                        <small>
+                            Products in store
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="stat">
+
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            CATEGORIES
+                        </span>
+
+
+                        <h2 id="">8</h2>
+
+
+
+                        <small>
+                            Active categories
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="stat">
+
+
+                    <div class="stat-icon">
+
+                        <i class="fa-solid fa-circle-check"></i>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            ACTIVE PRODUCTS
+                        </span>
+
+                        <h2 id="activeProducts">
+
+                        </h2>
+
+                        <small>
+                            Total value of all products
+                        </small>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- LOWER CONTENT -->
+
+            <div class="lower-content">
+
+
+                <!-- PRODUCTS -->
+
+                <div class="products-box">
+
+
+                    <div class="box-header">
+
+
+                        <div>
+
+                            <span>
+                                STORE MANAGEMENT
+                            </span>
+
+
+                            <h2>
+                                Recent Products
+                            </h2>
+
+                        </div>
+
+
+                        <a href="/admin/products">
+                            View all
+                        </a>
+
+
+                    </div>
+
+
+                    <!-- PRODUCT -->
+
+                    <div class="product" id="recentProducts">
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+                <!-- QUICK ACTIONS -->
+
+                <div class="actions-box">
+
+
+                    <div class="box-header">
+
+                        <div>
+
+                            <span>
+                                QUICK ACTIONS
+                            </span>
+
+
+                            <h2>
+                                Manage Store
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="/" class="action">
+
+
+                        <div>
+
+                            <i class="fa-solid fa-plus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-globe-icon lucide-globe">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                                    <path d="M2 12h20" />
+                                </svg>
+                            </i>
+
+                        </div>
+
+
+                        <span>
+                            View Site
+                        </span>
+
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+
+                    </a>
+
+                    <a href="/admin/add" class="action">
+
+
+                        <div>
+
+                            <i class="fa-solid fa-plus">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus">
+                                    <path d="M5 12h14" />
+                                    <path d="M12 5v14" />
+                                </svg>
+                            </i>
+
+                        </div>
+
+
+                        <span>
+                            Add New Product
+                        </span>
+
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+
+                    </a>
+
+
+                    <a href="/admin/products" class="action">
+
+
+                        <div>
+
+                            <i class="fa-solid fa-box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-folder-kanban-icon lucide-folder-kanban">
+                                    <path
+                                        d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z" />
+                                    <path d="M8 10v4" />
+                                    <path d="M12 10v2" />
+                                    <path d="M16 10v6" />
+                                </svg>
+                            </i>
+
+                        </div>
+
+
+                        <span>
+                            Manage Products
+                        </span>
+
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+
+                    </a>
+
+
+                    <a href="/admin/settings" class="action">
+
+
+                        <div>
+
+                            <i class="fa-solid fa-gear">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-shelving-unit-icon lucide-shelving-unit">
+                                    <path d="M12 12V9a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />
+                                    <path d="M16 20v-3a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v3" />
+                                    <path d="M20 22V2" />
+                                    <path d="M4 12h16" />
+                                    <path d="M4 20h16" />
+                                    <path d="M4 2v20" />
+                                    <path d="M4 4h16" />
+                                </svg>
+                            </i>
+
+                        </div>
+
+
+                        <span>
+                            Store Settings
+                        </span>
+
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+
+                    </a>
+
+
+                    <a href="#" class="action logoutBtn">
+
+
+                        <div>
+
+                            <i class="fa-solid fa-gear">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-log-out-icon lucide-log-out">
+                                    <path d="m16 17 5-5-5-5" />
+                                    <path d="M21 12H9" />
+                                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                                </svg>
+                            </i>
+
+                        </div>
+
+
+                        <span>
+                            Logout
+                        </span>
+
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- MOBILE OVERLAY -->
+
+    <div class="overlay" id="overlay">
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+
+        const menuButton =
+            document.getElementById(
+                "menuButton"
+            );
+
+
+        const sidebar =
+            document.getElementById(
+                "sidebar"
+            );
+
+
+        const overlay =
+            document.getElementById(
+                "overlay"
+            );
+
+
+        menuButton.addEventListener(
+
+            "click",
+
+            () => {
+
+                sidebar.classList.toggle(
+                    "show"
+                );
+
+
+                overlay.classList.toggle(
+                    "show"
+                );
+
+            }
+
+        );
+
+
+        overlay.addEventListener(
+
+            "click",
+
+            () => {
+
+                sidebar.classList.remove(
+                    "show"
+                );
+
+
+                overlay.classList.remove(
+                    "show"
+                );
+
+            }
+
+        );
+
+
+    </script>
+
+    <script src="/admin/js/dashboard.js"></script>
+    <script src="/admin/js/notification.js"></script>
+    <script src="/admin/js/logout.js"></script>
+</body>
+
+</html>

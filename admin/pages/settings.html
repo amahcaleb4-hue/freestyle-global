@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Products | Freestyle Global
+    </title>
+
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- DASHBOARD CSS -->
+
+    <link rel="stylesheet" href="/admin/css/dashbord.css">
+
+
+    <!-- PRODUCTS CSS -->
+
+    <link rel="stylesheet" href="/admin/css/product.css">
+
+    <link rel="stylesheet" href="/admin//css/settings.css">
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+    <aside class="sidebar" id="sidebar">
+
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+
+            <div class="logo-mark">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-earth-icon lucide-earth">
+
+                    <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+
+                    <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+
+                    <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 1-2-2H2.05" />
+
+                    <circle cx="12" cy="12" r="10" />
+
+                </svg>
+
+            </div>
+
+
+            <div class="logo-text">
+
+                <h2>
+                    FREESTYLE
+                </h2>
+
+
+                <span>
+                    GLOBAL
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="navigation">
+
+
+            <p class="menu-label">
+
+                MENU
+
+            </p>
+
+
+            <a href="/admin" class="nav-item">
+
+
+                <i class="fa-solid">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-house-icon lucide-house">
+
+                        <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" />
+
+                        <path
+                            d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+
+                    </svg>
+
+                </i>
+
+
+                <span>
+
+                    Dashboard
+
+                </span>
+
+            </a>
+
+
+            <a href="/admin/products" class="nav-item active">
+
+
+                <i class="fa-solid">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-package2-icon lucide-package-2">
+
+                        <path d="M12 3v6" />
+
+                        <path
+                            d="M16.76 3a2 2 0 0 1 1.8 1.1l2.23 4.479a2 2 0 0 1 .21.891V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9.472a2 2 0 0 1 .211-.894L5.45 4.1A2 2 0 0 1 7.24 3z" />
+
+                        <path d="M3.054 9.013h17.893" />
+
+                    </svg>
+
+                </i>
+
+
+                <span>
+
+                    Products
+
+                </span>
+
+            </a>
+
+
+            <a href="/admin/add" class="nav-item">
+
+
+                <i class="fa-solid ">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-plus-icon lucide-plus">
+
+                        <path d="M5 12h14" />
+
+                        <path d="M12 5v14" />
+
+                    </svg>
+
+                </i>
+
+
+                <span>
+
+                    Add Product
+
+                </span>
+
+            </a>
+
+
+            <p class="menu-label">
+
+                SYSTEM
+
+            </p>
+
+
+            <a href="/" class="nav-item">
+
+
+                <i class="fa-solid">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-globe-icon lucide-globe">
+
+                        <circle cx="12" cy="12" r="10" />
+
+                        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+
+                        <path d="M2 12h20" />
+
+                    </svg>
+
+                </i>
+
+
+                <span>
+
+                    View Website
+
+                </span>
+
+            </a>
+
+
+            <a href="#" class="nav-item">
+
+
+                <i class="fa-solid ">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-settings-icon lucide-settings">
+
+                        <path
+                            d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 1-3.319 1.915 2.34 2.34 0 0 0-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915" />
+
+                        <circle cx="12" cy="12" r="3" />
+
+                    </svg>
+
+                </i>
+
+
+                <span>
+
+                    Settings
+
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+        <!-- LOGOUT -->
+
+        <div class="logout-container">
+
+
+            <a href="#" class="nav-item logout logoutBtn">
+
+
+                <i class="fa-solid">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-log-out-icon lucide-log-out">
+
+                        <path d="m16 17 5-5-5-5" />
+
+                        <path d="M21 12H9" />
+
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+
+                    </svg>
+
+                </i>
+
+
+                <span>
+
+                    Logout
+
+                </span>
+
+            </a>
+
+
+        </div>
+
+
+    </aside>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    `
+    <main class="main">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+
+            <button class="menu-button" id="menuButton">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="topbar-title">
+
+
+                <span>
+
+                    STORE MANAGEMENT
+
+                </span>
+
+
+                <h1>
+
+                    Settings
+
+                </h1>
+
+
+            </div>
+
+
+            <div class="admin-area">
+
+
+                <button class="notification">
+
+
+                    <a style="color: inherit;" href="/admin/messages">
+                        <i class="fa-regular ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-bell-icon lucide-bell">
+                                <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+                                <path
+                                    d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" />
+                            </svg>
+                        </i>
+                    </a>
+
+                    <small class="messageCount">
+
+
+
+                    </small>
+
+
+                </button>
+
+
+                <div class="avatar">
+
+                    A
+
+                </div>
+
+
+                <div class="admin-name">
+
+
+                    <strong>
+
+                        Admin
+
+                    </strong>
+
+
+                    <span>
+
+                        Store Manager
+
+                    </span>
+
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+        <section class="main-content">
+
+            <div class="page-header">
+
+                <div>
+
+                    <h1>Settings</h1>
+
+                    <p>
+                        Manage your administrator account.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <section class="settings-container">
+
+                <!-- ACCOUNT DETAILS -->
+
+                <div class="settings-card">
+
+                    <h3>Admin Profile</h3>
+
+                    <div class="setting-item">
+
+                        <small>Full Name</small>
+
+                        <p id="displayFullname">Loading...</p>
+
+                    </div>
+
+                    <div class="setting-item">
+
+                        <small>Username</small>
+
+                        <p id="displayUsername">Loading...</p>
+
+                    </div>
+
+                    <div class="setting-item">
+
+                        <small>Email</small>
+
+                        <p id="displayEmail">Loading...</p>
+
+                    </div>
+
+                    <button id="updateProfileBtn" class="primary-btn">
+
+                        Update Profile
+
+                    </button>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="settings-card">
+
+                    <h3>Security</h3>
+
+                    <p class="description">
+
+                        Change your login password to keep your account secure.
+
+                    </p>
+
+                    <button id="changePasswordBtn" class="secondary-btn">
+
+                        Change Password
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- MOBILE OVERLAY -->
+
+    <div class="overlay" id="overlay">
+
+    </div>
+
+
+    <!-- MOBILE MENU SCRIPT -->
+
+    <script>
+
+
+        const menuButton =
+
+            document.getElementById(
+
+                "menuButton"
+
+            );
+
+
+        const sidebar =
+
+            document.getElementById(
+
+                "sidebar"
+
+            );
+
+
+        const overlay =
+
+            document.getElementById(
+
+                "overlay"
+
+            );
+
+
+        menuButton.addEventListener(
+
+            "click",
+
+            () => {
+
+
+                sidebar.classList.toggle(
+
+                    "show"
+
+                );
+
+
+                overlay.classList.toggle(
+
+                    "show"
+
+                );
+
+
+            }
+
+        );
+
+
+        overlay.addEventListener(
+
+            "click",
+
+            () => {
+
+
+                sidebar.classList.remove(
+
+                    "show"
+
+                );
+
+
+                overlay.classList.remove(
+
+                    "show"
+
+                );
+
+
+            }
+
+        );
+
+
+    </script>
+
+
+    <!-- ==========================
+     UPDATE PROFILE MODAL
+========================== -->
+
+    <div class="modal" id="profileModal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2>Update Profile</h2>
+
+                <button id="closeModal">&times;</button>
+
+            </div>
+
+            <form id="updateProfileForm">
+
+                <div class="form-group">
+
+                    <label>Full Name</label>
+
+                    <input type="text" id="editFullname" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Username</label>
+
+                    <input type="text" id="editUsername" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Email</label>
+
+                    <input type="email" id="editEmail" required>
+
+                </div>
+
+                <button type="submit" class="primary-btn">
+
+                    Save Changes
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ==========================
+     CHANGE PASSWORD MODAL
+========================== -->
+
+    <div class="modal" id="passwordModal">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2>Change Password</h2>
+
+                <button id="closePasswordModal">&times;</button>
+
+            </div>
+
+            <form id="changePasswordForm">
+
+                <div class="form-group">
+
+                    <label>Current Password</label>
+
+                    <input type="password" id="currentPassword" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>New Password</label>
+
+                    <input type="password" id="newPassword" required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Confirm Password</label>
+
+                    <input type="password" id="confirmPassword" required>
+
+                </div>
+
+                <button  class="secondary-btn" type="submit">
+
+                    Change Password
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- PRODUCTS JAVASCRIPT -->
+
+    <script src="/admin/js/settings.js"></script>
+    <script src="/admin/js/notification.js"></script>
+    <script src="/admin/js/logout.js"></script>
+
+
+</body>
+
+</html>

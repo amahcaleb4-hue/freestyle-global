@@ -1,0 +1,632 @@
+/* =========================
+   SHOP HERO
+========================= */
+
+.shop-hero {
+
+    min-height: 360px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 70px 8%;
+
+    position: relative;
+    overflow: hidden;
+    background-image: url(../img/shop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.shop-hero-content {
+
+    max-width: 650px;
+
+}
+
+
+.breadcrumb {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+
+    color: #aaa;
+
+    font-size: 14px;
+
+}
+
+
+.breadcrumb a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+}
+
+
+.breadcrumb span:last-child {
+
+    color: #d4af37;
+
+}
+
+
+.shop-hero h1 {
+
+    font-size: clamp(38px, 6vw, 70px);
+
+    line-height: 1.1;
+
+    letter-spacing: 2px;
+
+    color: #fff;
+
+}
+
+
+.shop-hero h1 span {
+
+    display: block;
+
+    color: #d4af37;
+
+}
+
+
+.gold-line {
+
+    width: 80px;
+
+    height: 3px;
+
+    margin: 25px 0;
+
+    background: #d4af37;
+
+}
+
+
+.hero-description {
+
+    max-width: 500px;
+
+    color: #ccc;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================
+   SHOP SECTION
+========================= */
+
+.shop-section {
+
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+
+    gap: 45px;
+
+    padding: 70px 6%;
+
+    background: #080808;
+
+}
+
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.shop-sidebar {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 30px;
+
+}
+
+
+.filter-box {
+
+    border: 1px solid #3c2d0a;
+
+    padding: 25px;
+
+    background: #0d0d0d;
+
+}
+
+
+.filter-box h2 {
+
+    color: #d4af37;
+
+    font-size: 16px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.category-btn {
+
+    display: block;
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 8px;
+
+    text-align: left;
+
+    color: #bbb;
+
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid #222;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.category-btn:hover,
+
+.category-btn.active {
+
+    color: #d4af37;
+
+    padding-left: 20px;
+
+}
+
+
+.delivery-card {
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border: 1px solid #3c2d0a;
+
+    background:
+
+        linear-gradient(145deg,
+            #111,
+            #080808);
+
+}
+
+
+.delivery-icon {
+
+    color: #d4af37;
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.delivery-card h3 {
+
+    color: #d4af37;
+
+    font-size: 16px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.delivery-card p {
+
+    color: #aaa;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+.delivery-card a {
+
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 10px 15px;
+
+    color: white;
+
+    border: 1px solid #d4af37;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+}
+
+
+.delivery-card a i {
+
+    color: #25d366;
+
+}
+
+
+/* =========================
+   PRODUCTS HEADER
+========================= */
+
+.products-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+
+}
+
+
+.products-header p {
+
+    color: #aaa;
+
+}
+
+
+.products-header select {
+
+    padding: 12px 15px;
+
+    color: #fff;
+
+    background: #111;
+
+    border: 1px solid #3c2d0a;
+
+    outline: none;
+
+}
+
+
+/* =========================
+   PRODUCT GRID
+========================= */
+
+.products-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.product-card {
+
+    overflow: hidden;
+
+    background: #0d0d0d;
+
+    border: 1px solid #292929;
+
+    transition: .4s;
+
+}
+
+
+.product-card:hover {
+
+    border-color: #d4af37;
+
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px rgba(212, 175, 55, .12);
+
+}
+
+
+/* PRODUCT IMAGE */
+
+.product-image {
+
+    height: 260px;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+
+        radial-gradient(circle,
+            #222,
+            #090909);
+
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: .4s;
+
+}
+
+
+.product-card:hover .product-image img {
+
+    transform: scale(1.08);
+
+}
+
+
+.product-badge {
+
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    z-index: 2;
+
+    padding: 6px 10px;
+
+    color: #000;
+
+    background: #d4af37;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+}
+
+
+/* PRODUCT DETAILS */
+
+.product-details {
+
+    padding: 20px;
+
+}
+
+
+.product-category {
+
+    color: #d4af37;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
+
+}
+
+
+.product-details h3 {
+
+    min-height: 45px;
+
+    color: #fff;
+
+    font-size: 16px;
+
+    line-height: 1.4;
+
+}
+
+
+.product-bottom {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-top: 20px;
+
+}
+
+
+.product-bottom strong {
+
+    color: #d4af37;
+
+    font-size: 18px;
+
+}
+
+
+.product-bottom a {
+
+    width: 40px;
+
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    color: #25d366;
+
+    border: 1px solid #3c2d0a;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+
+.product-bottom a:hover {
+
+    color: #000;
+
+    background: #d4af37;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .products-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    .shop-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .shop-sidebar {
+
+        display: grid;
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .shop-hero {
+
+        min-height: 330px;
+
+        padding: 50px 6%;
+
+    }
+
+
+    .shop-hero h1 {
+
+        font-size: 40px;
+
+    }
+
+
+    .shop-section {
+
+        padding: 45px 5%;
+
+    }
+
+
+    .shop-sidebar {
+
+        display: block;
+
+    }
+
+
+    .products-header {
+
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+
+    }
+
+
+    .products-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+
+    .product-image {
+
+        height: 180px;
+
+    }
+
+
+    .product-details {
+
+        padding: 12px;
+
+    }
+
+
+    .product-details h3 {
+
+        font-size: 13px;
+
+    }
+
+
+    .product-bottom strong {
+
+        font-size: 14px;
+
+    }
+
+}

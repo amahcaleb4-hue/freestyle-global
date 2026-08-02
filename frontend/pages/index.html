@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Freestyle Global</title>
+
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-earth-icon lucide-earth">
+                <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+                <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+                <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
+                <circle cx="12" cy="12" r="10" />
+            </svg>
+
+
+            <h2>Freestyle <span>Global</span></h2>
+
+
+        </div>
+
+
+
+        <div class="menu-dropdown">
+
+            <a href="#" class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu-icon lucide-menu">
+                    <path d="M4 5h16" />
+                    <path d="M4 12h16" />
+                    <path d="M4 19h16" />
+                </svg>
+            </a>
+
+            <div class="dropdown-content">
+                <a href="/">HOME</a>
+                <a href="/shop">SHOP</a>
+                <a href="/about">ABOUT</a>
+                <a href="/contact">CONTACT</a>
+            </div>
+
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="/shop">Shop</a></li>
+
+            <div class="menu-dropdown">
+
+                <a href="#" class="menu-icon">
+                    <svg>
+                        ...
+                    </svg>
+                </a>
+
+                <div class="dropdown-content">
+                    <a href="/">HOME</a>
+                    <a href="/shop">SHOP</a>
+                    <a href="/about">ABOUT</a>
+                    <a href="/contact">CONTACT</a>
+                </div>
+
+            </div>
+            <li><a href="/about">About</a></li>
+
+            <li><a href="/contact">Contact</a></li>
+
+        </ul>
+
+        <button class="shop-btn">
+            <a style="color: black; text-decoration: none;" href="/shop">Shop Now</a>
+        </button>
+
+
+
+
+
+    </nav>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <header class="hero">
+
+        <div class="hero-text">
+
+            <small>PREMIUM COSMETICS</small>
+
+            <h1>
+                Enhance Your
+                <span>Natural Beauty</span>
+            </h1>
+
+            <p>
+
+                Discover premium household and cosmetic
+                products designed to bring confidence,
+                beauty and comfort into your everyday life.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="/shop">
+                    <button class="primary-btn">
+                        Shop Now
+                    </button>
+                </a>
+
+                <a href="/about">
+                    <button class="secondary-btn">
+                        Learn More
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img src="/img/brand.jpeg" alt="Hero">
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <div class="feature-card">
+
+            <div class="icon">✓</div>
+
+            <h3>100% Original</h3>
+
+            <p>
+                Genuine cosmetics and household products from trusted brands.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="icon">🚚</div>
+
+            <h3>Fast Delivery</h3>
+
+            <p>
+                Quick nationwide delivery right to your doorstep.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="icon">🔒</div>
+
+            <h3>Secure Payment</h3>
+
+            <p>
+                Shop safely using trusted and secure payment methods.
+            </p>
+
+        </div>
+
+
+
+        <div class="feature-card">
+
+            <div class="icon">💬</div>
+
+            <h3>24/7 Support</h3>
+
+            <p>
+                Our team is always available to help you anytime.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+
+    <section class="featured-section">
+
+        <div class="section-title">
+
+            <small>OUR COLLECTION</small>
+
+            <h2>Featured Products</h2>
+
+            <p>
+                Carefully selected products for beauty and everyday living.
+            </p>
+
+        </div>
+
+        <div class="products-grid" id="featuredProducts">
+
+            <!-- Products will come from home.js -->
+
+        </div>
+
+        <div class="view-all">
+
+            <a href="/shop">
+
+                <button class="view-btn">
+
+                    View All Products →
+
+                </button>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+FEATURED CATEGORIES
+========================= -->
+
+    <section class="categories">
+
+        <div class="section-title">
+            <small>SHOP BY CATEGORY</small>
+            <h2>Find Your Favorite Products</h2>
+            <p>Premium beauty products carefully selected for your everyday needs.</p>
+        </div>
+
+        <div class="category-grid">
+
+            <div class="category-card">
+                <img src="../img/vitaminCcream.jpeg" alt="">
+                <div class="overlay">
+                    <h3>Skin Care</h3>
+                    <button>
+                        <a style="text-decoration: none; " href="/shop">Explore</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="../img/makeup.jpg" alt="">
+                <div class="overlay">
+                    <h3>Perfumes</h3>
+                    <button>
+                        <a style="text-decoration: none; " href="/shop">Explore</a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="category-card">
+                <img src="../img/vitaminCsoap.jpg" alt="">
+                <div class="overlay">
+                    <h3>Soap</h3>
+                    <button>
+                        <a style="text-decoration: none; " href="/shop">Explore</a>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section class="features">
+
+        <div class="feature-card">
+            <div class="feature-icon">🚚</div>
+            <h3>Fast Delivery</h3>
+            <p>Nationwide delivery with safe packaging and quick dispatch.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3>100% Original</h3>
+            <p>Only authentic beauty and household products.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">💳</div>
+            <h3>Secure Payment</h3>
+            <p>Safe payment methods that protect every transaction.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">⭐</div>
+            <h3>Best Quality</h3>
+            <p>Premium products carefully selected for everyday use.</p>
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FEATURED CATEGORIES -->
+    <!-- ========================= -->
+
+
+
+
+    <!-- =========================
+     FEATURED PRODUCTS
+========================= -->
+
+    <section class="products">
+
+        <div class="section-title">
+            <h2>Featured Products</h2>
+            <p>Best selling beauty products</p>
+        </div>
+
+        <div class="product-grid">
+
+
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+    <section class="why-us">
+
+        <div class="section-title">
+            <h2>Why Choose Freestyle Global?</h2>
+            <p>We're committed to quality, affordability, and customer satisfaction.</p>
+        </div>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <div class="icon">🌿</div>
+                <h3>Natural Ingredients</h3>
+                <p>Carefully selected ingredients that nourish and protect your skin.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="icon">🚚</div>
+                <h3>Fast Delivery</h3>
+                <p>Quick and reliable delivery across Nigeria.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="icon">💳</div>
+                <h3>Secure Payment</h3>
+                <p>Safe and trusted payment methods for every order.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="icon">⭐</div>
+                <h3>Premium Quality</h3>
+                <p>Only genuine products from trusted manufacturers.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+     SPECIAL OFFER
+========================= -->
+
+    <section class="offer">
+
+        <div class="offer-content">
+
+            <small>LIMITED TIME OFFER</small>
+
+            <h2>
+                Get <span>40% OFF</span><br>
+                On Selected Beauty Products
+            </h2>
+
+            <p>
+                Upgrade your beauty routine with premium cosmetics at
+                unbeatable prices.
+            </p>
+
+            <a href="/shop">
+                <button>Shop Now</button>
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!--=========================
+      TESTIMONIALS
+==========================-->
+
+    <section class="testimonials">
+
+        <div class="section-title">
+            <h2>What Our Customers Say</h2>
+            <p>Thousands of happy customers trust Freestyle Global.</p>
+        </div>
+
+        <div class="testimonial-grid">
+
+            <!-- Customer 1 -->
+
+            <div class="testimonial-card">
+
+                <img src="../img/feamaleCustomer.jpg" alt="Customer">
+
+                <h3>Sarah Johnson</h3>
+
+                <div class="rating">★★★★★</div>
+
+                <p>
+                    I absolutely love the skincare products.
+                    Delivery was fast and the quality exceeded my expectations.
+                </p>
+
+            </div>
+
+            <!-- Customer 2 -->
+
+            <div class="testimonial-card">
+
+                <img src="../img/maleCustomaer2.jpg" alt="Customer">
+
+                <h3>Grace Williams</h3>
+
+                <div class="rating">★★★★★</div>
+
+                <p>
+                    Freestyle Global has become my favorite beauty store.
+                    Everything arrived perfectly packaged.
+                </p>
+
+            </div>
+
+            <!-- Customer 3 -->
+
+            <div class="testimonial-card">
+
+                <img src="../img/maleCustomer.jpg" alt="Customer">
+
+                <h3>Jennifer Adams</h3>
+
+                <div class="rating">★★★★★</div>
+
+                <p>
+                    Excellent customer service and premium products.
+                    I'll definitely order again.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+            <div class="footer-column">
+
+                <h2>Freestyle Global</h2>
+
+                <p>
+                    Premium household products and beauty cosmetics
+                    delivered with quality and trust.
+                </p>
+
+                <div class="socials">
+
+                    <a href="https://www.facebook.com/share/14kkuEcS6og/">
+                        <img src="../img/facebook-logo.jpg" alt="">
+                    </a>
+
+
+                    <a href="https://www.instagram.com/dr.liwei_official?igsh=bXQ2enhwaGd3aXl1">
+                        <img src="../img/instergram.jpg" alt="">
+                    </a>
+
+
+                    <a href="https://www.tiktok.com/@dr.liwei_official">
+                        <img src="../img/tiktok log.jpg" alt="">
+                    </a>
+
+                    <a href="https://wa.me/2347067253363">
+                        <img src="../img/WhatsApp logo.jpg" alt="">
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="/">Home</a></li>
+
+                    <li><a href="/shop">Shop</a></li>
+
+                    <li><a href="/about">About</a></li>
+
+                    <li><a href="/contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Customer -->
+
+            <div class="footer-column">
+
+                <h3>Customer Care</h3>
+
+                <ul>
+
+                    <li>Order on WhatsApp</li>
+
+                    <li>Fast Delivery</li>
+
+                    <li>Secure Payment</li>
+
+                    <li>Return Policy</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>📞 +234 706 725 3363</p>
+
+                <p>✉ freestyleglobal@gmail.com</p>
+
+                <p>
+                    📍 Shop B/20
+                    Trade fair complex
+                    Badagry express way Lagos, Nigeria
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Freestyle Global. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/home.js"></script>
+</body>
+
+</html>

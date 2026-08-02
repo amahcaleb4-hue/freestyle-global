@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freestyle Global</title>
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-earth-icon lucide-earth">
+                <path d="M21.54 15H17a2 2 0 0 0-2 2v4.54" />
+                <path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17" />
+                <path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05" />
+                <circle cx="12" cy="12" r="10" />
+            </svg>
+
+
+            <h2>Freestyle <span>Global</span></h2>
+
+
+        </div>
+
+
+
+        <div class="menu-dropdown">
+
+            <a href="#" class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu-icon lucide-menu">
+                    <path d="M4 5h16" />
+                    <path d="M4 12h16" />
+                    <path d="M4 19h16" />
+                </svg>
+            </a>
+
+            <div class="dropdown-content">
+                <a href="/">HOME</a>
+                <a href="/shop">SHOP</a>
+                <a href="/about">ABOUT</a>
+                <a href="/contact">CONTACT</a>
+            </div>
+
+        </div>
+
+
+        <ul class="nav-links">
+
+            <li><a href="/">Home</a></li>
+
+            <li><a href="/shop">Shop</a></li>
+
+
+            <li><a href="/about">About</a></li>
+
+            <li><a href="/contact">Contact</a></li>
+
+        </ul>
+
+        <button class="shop-btn">
+            <a style="color: black; text-decoration: none;" href="/shop">Shop Now</a>
+        </button>
+
+
+
+
+
+    </nav>
+
+
+    <main>
+
+        <!-- SHOP HERO -->
+        <section class="shop-hero">
+
+            <div class="shop-hero-content">
+
+                <p class="breadcrumb">
+                    <a href="/">Home</a>
+                    <span>/</span>
+                    <span>Shop</span>
+                </p>
+
+                <h1>
+                    SHOP OUR
+                    <span>PRODUCTS</span>
+                </h1>
+
+                <div class="gold-line"></div>
+
+                <p class="hero-description">
+                    Discover quality cosmetics, skincare,
+                    haircare and household products carefully
+                    selected for your everyday needs.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SHOP AREA -->
+        <section class="shop-section">
+
+            <!-- SIDEBAR -->
+            <aside class="shop-sidebar">
+
+                <div class="filter-box">
+
+                    <h2>SHOP BY CATEGORY</h2>
+
+                    <button class="category-btn active" data-category="all">
+
+                        All Products
+
+                    </button>
+
+                    <button class="category-btn" data-category="lotion">
+
+                        Lotion
+
+                    </button>
+
+                    <button class="category-btn" data-category="shower gel">
+
+                        Shower gel
+
+                    </button>
+
+                    <button class="category-btn" data-category="soap">
+
+                        Soap
+
+                    </button>
+
+                    <button class="category-btn" data-category="serum">
+
+                        Serum
+
+                    </button>
+
+                    <button class="category-btn" data-category="oil">
+
+                        Oil
+
+                    </button>
+
+                    <button class="category-btn" data-category="Perfumes">
+
+                        Perfumes
+
+                    </button>
+
+                    <button class="category-btn" data-category="scrub">
+
+                        Scrub
+
+                    </button>
+
+                    <button class="category-btn" data-category="uv">
+
+                        UV
+
+                    </button>
+
+                </div>
+
+
+                <div class="delivery-card">
+
+                    <div class="delivery-icon">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+
+                    <h3>
+                        QUALITY PRODUCTS
+                    </h3>
+
+                    <p>
+                        Shop quality products for your
+                        beauty and everyday needs.
+                    </p>
+
+                    <a href="https://wa.me/2347067253363">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        Contact Us
+
+                    </a>
+
+                </div>
+
+            </aside>
+
+
+            <!-- PRODUCTS AREA -->
+            <section class="products-area">
+
+                <div class="products-header">
+
+                    <p>
+                        Explore our collection
+                    </p>
+
+                    <select id="sortProducts">
+
+                        <option value="default">
+                            Sort Products
+                        </option>
+
+                        <option value="low">
+                            Price: Low to High
+                        </option>
+
+                        <option value="high">
+                            Price: High to Low
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="products-grid" id="productsGrid">
+
+
+                    <!-- PRODUCT CARD -->
+                    <!-- <article class="product-card" data-category="skincare" data-price="6500">
+
+                        <div class="product-image">
+
+                            <span class="product-badge">
+                                NEW
+                            </span>
+
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHNDNPjhv1kHQSJd7RSiieEjx9_zX5f2kL2NDq3mnZrw&s=10"
+                                alt="Skincare product">
+
+                        </div>
+
+                        <div class="product-details">
+
+                            <p class="product-category">
+                                SKINCARE
+                            </p>
+
+                            <h3>
+                                Glow Brightening
+                                Body Lotion
+                            </h3>
+
+                            <div class="product-bottom">
+
+                                <strong>
+                                    ₦6,500
+                                </strong>
+
+                                <a
+                                    href="https://wa.me/2347067253363?text=Hello%20I%20want%20to%20order%20Glow%20Brightening%20Body%20Lotion">
+
+                                    <i class="fa-brands">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="lucide lucide-shopping-cart-icon lucide-shopping-cart">
+                                            <circle cx="8" cy="21" r="1" />
+                                            <circle cx="19" cy="21" r="1" />
+                                            <path
+                                                d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" />
+                                        </svg>
+                                    </i>
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article> -->
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company -->
+            <div class="footer-column">
+
+                <h2>Freestyle Global</h2>
+
+                <p>
+                    Premium household products and beauty cosmetics
+                    delivered with quality and trust.
+                </p>
+
+                <div class="socials">
+
+                    <a href="https://www.facebook.com/share/14kkuEcS6og/">
+                        <img src="../img/facebook-logo.jpg" alt="">
+                    </a>
+
+
+                    <a href="https://www.instagram.com/dr.liwei_official?igsh=bXQ2enhwaGd3aXl1">
+                        <img src="../img/instergram.jpg" alt="">
+                    </a>
+
+
+                    <a href="https://www.tiktok.com/@dr.liwei_official">
+                        <img src="../img/tiktok log.jpg" alt="">
+                    </a>
+
+                    <a href="https://wa.me/2347067253363">
+                        <img src="../img/WhatsApp logo.jpg" alt="">
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="/">Home</a></li>
+
+                    <li><a href="/shop">Shop</a></li>
+
+                    <li><a href="/about">About</a></li>
+
+                    <li><a href="/contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Customer -->
+
+            <div class="footer-column">
+
+                <h3>Customer Care</h3>
+
+                <ul>
+
+                    <li>Order on WhatsApp</li>
+
+                    <li>Fast Delivery</li>
+
+                    <li>Secure Payment</li>
+
+                    <li>Return Policy</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Contact -->
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>📞 +234 706 725 3363</p>
+
+                <p>✉ freestyleglobal@gmail.com</p>
+
+                <p>
+                    📍 Shop B/20
+                    Trade fair complex
+                    Badagry express way Lagos, Nigeria
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Freestyle Global. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="../js/shop.js"></script>
+</body>
+
+</html>

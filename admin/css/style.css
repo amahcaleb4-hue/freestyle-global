@@ -1,0 +1,715 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+:root {
+
+    --black: #070707;
+
+    --dark-black: #0d0d0d;
+
+    --card-black: #111111;
+
+    --gold: #d4af37;
+
+    --bright-gold: #f1c84b;
+
+    --light-gold: #e8c96a;
+
+    --white: #ffffff;
+
+    --gray: #999999;
+
+    --border: #33280c;
+
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family:
+
+        Arial,
+
+        Helvetica,
+
+        sans-serif;
+
+    background: var(--black);
+
+    color: var(--white);
+
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.auth-page {
+
+    min-height: 100vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+/* =========================
+   BRAND SIDE
+========================= */
+
+.auth-brand {
+
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 70px;
+
+    background:
+
+        linear-gradient(
+
+            rgba(0, 0, 0, .75),
+
+            rgba(0, 0, 0, .95)
+
+        ),
+
+        url("../images/admin-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.auth-brand::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 4px;
+
+    height: 100%;
+
+    background: var(--gold);
+
+}
+
+
+.brand-content {
+
+    max-width: 550px;
+
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.brand-logo,
+
+.mobile-logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+.logo-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    display: grid;
+
+    place-items: center;
+
+    border: 2px solid var(--gold);
+
+    color: var(--gold);
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+
+.brand-logo h1,
+
+.mobile-logo h1 {
+
+    font-size: 21px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.brand-logo h1 span,
+
+.mobile-logo h1 span {
+
+    color: var(--gold);
+
+}
+
+
+.brand-logo p,
+
+.mobile-logo p {
+
+    margin-top: 5px;
+
+    color: #aaa;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================
+   BRAND MESSAGE
+========================= */
+
+.brand-message {
+
+    margin-top: 150px;
+
+}
+
+
+.small-title {
+
+    color: var(--gold);
+
+    font-size: 11px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+.brand-message h2 {
+
+    margin: 20px 0;
+
+    font-size: clamp(
+
+        40px,
+
+        5vw,
+
+        70px
+
+    );
+
+    line-height: 1.1;
+
+}
+
+
+.brand-message h2 span {
+
+    display: block;
+
+    color: var(--gold);
+
+}
+
+
+.brand-message > p:last-child {
+
+    max-width: 450px;
+
+    color: #bbb;
+
+    line-height: 1.8;
+
+}
+
+
+.brand-footer {
+
+    display: flex;
+
+    gap: 20px;
+
+    margin-top: 100px;
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =========================
+   FORM SIDE
+========================= */
+
+.auth-form-section {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 50px;
+
+    background: #0a0a0a;
+
+}
+
+
+.form-container {
+
+    width: 100%;
+
+    max-width: 480px;
+
+}
+
+
+/* MOBILE LOGO */
+
+.mobile-logo {
+
+    display: none;
+
+    margin-bottom: 50px;
+
+}
+
+
+.mobile-logo .logo-icon {
+
+    width: 45px;
+
+    height: 45px;
+
+}
+
+
+.mobile-logo h1 {
+
+    font-size: 16px;
+
+}
+
+
+/* =========================
+   FORM HEADER
+========================= */
+
+.form-header {
+
+    margin-bottom: 35px;
+
+}
+
+
+.form-header h2 {
+
+    margin: 12px 0;
+
+    font-size: 40px;
+
+    line-height: 1.1;
+
+}
+
+
+.form-header h2 span {
+
+    color: var(--gold);
+
+}
+
+
+.form-header > p:last-child {
+
+    color: var(--gray);
+
+    line-height: 1.6;
+
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.form-group {
+
+    margin-bottom: 20px;
+
+}
+
+
+.form-group label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ddd;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+}
+
+
+.input-wrapper {
+
+    position: relative;
+
+}
+
+
+.input-wrapper > i {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 15px;
+
+    transform: translateY(-50%);
+
+    color: var(--gold);
+
+}
+
+
+.input-wrapper input {
+
+    width: 100%;
+
+    padding: 15px 45px;
+
+    color: white;
+
+    background: #111;
+
+    border: 1px solid #333;
+
+    outline: none;
+
+    font-size: 14px;
+
+    transition: .3s;
+
+}
+
+
+.input-wrapper input:focus {
+
+    border-color: var(--gold);
+
+    box-shadow:
+
+        0 0 0 2px
+
+        rgba(212, 175, 55, .08);
+
+}
+
+
+.input-wrapper input::placeholder {
+
+    color: #666;
+
+}
+
+
+/* SHOW PASSWORD */
+
+.show-password {
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 15px;
+
+    transform: translateY(-50%);
+
+    color: #777;
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+}
+
+
+.show-password:hover {
+
+    color: var(--gold);
+
+}
+
+
+/* =========================
+   PASSWORD STRENGTH
+========================= */
+
+.password-strength {
+
+    display: flex;
+
+    gap: 5px;
+
+    margin-top: 8px;
+
+}
+
+
+.password-strength span {
+
+    height: 3px;
+
+    flex: 1;
+
+    background: #333;
+
+}
+
+
+.password-hint {
+
+    margin-top: 7px;
+
+    color: #666;
+
+    font-size: 11px;
+
+}
+
+
+/* =========================
+   TERMS
+========================= */
+
+.terms {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 25px 0;
+
+    color: #888;
+
+    font-size: 12px;
+
+}
+
+
+.terms input {
+
+    accent-color: var(--gold);
+
+}
+
+
+.terms a {
+
+    color: var(--gold);
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.create-account-btn {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    padding: 16px;
+
+    color: #000;
+
+    background: var(--gold);
+
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    transition: .3s;
+
+}
+
+
+.create-account-btn:hover {
+
+    background: var(--bright-gold);
+
+    transform: translateY(-2px);
+
+}
+
+
+.create-account-btn i {
+
+    transition: .3s;
+
+}
+
+
+.create-account-btn:hover i {
+
+    transform: translateX(5px);
+
+}
+
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.login-link {
+
+    margin-top: 25px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 13px;
+
+}
+
+
+.login-link a {
+
+    color: var(--gold);
+
+    text-decoration: none;
+
+}
+
+
+.login-link a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+
+    .auth-page {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .auth-brand {
+
+        display: none;
+
+    }
+
+
+    .auth-form-section {
+
+        min-height: 100vh;
+
+        padding: 30px 20px;
+
+    }
+
+
+    .mobile-logo {
+
+        display: flex;
+
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+
+    .form-header h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .auth-form-section {
+
+        padding: 25px 18px;
+
+    }
+
+}
